@@ -1,0 +1,188 @@
+/* GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+:root{
+    --bg-main-color: #222222;
+    --light-yellow: #333;
+    --light-orange: #8f8e8e;
+    --light-blue: #8f8e8e;
+    --light-green: #333;
+    --light-pink: #000000;
+    font: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    text-align: center;
+    --transition: .2s;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--bg-main-color);
+    overflow-x: hidden;
+}
+
+.mg-bottom-10{
+    margin-bottom: 10px;
+}
+
+.no-margin{
+    margin: 0px !important;
+}
+
+/* BALL 1 */
+.ball-1{
+    position: absolute;
+    height: 70%;
+    aspect-ratio: 1;
+    background: linear-gradient(135deg, var(--light-yellow), var(--light-orange));
+    border-radius: 100%;
+    top: -18%;
+    left: 10%;
+    z-index: -1;
+}
+
+/* BALL 2 */
+.ball-2{
+    position: absolute;
+    height: 40%;
+    aspect-ratio: 1;
+    background: linear-gradient(135deg, var(--light-blue), var(--light-green));
+    border-radius: 100%;
+    bottom: 10%;
+    right: 20%;
+    z-index: -1;
+}
+
+/* SCREEN */
+.screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* CARD */
+.card{
+    width: 400px;
+    height: max-content;
+    padding: 44px 22px;
+    background-color: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(255, 255, 255, .4);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
+}
+
+/* CARD HEADER */
+.card-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-photo{
+    width: 40%;
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, .4);
+
+}
+
+.person-name{
+    font-size: 1.5rem;
+}
+
+/* CARD BODY */
+.data-body{
+    display: flex;
+    justify-content: center;
+    height: 1.2rem;
+    padding: 15px 0px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(255, 255, 255, .4);
+    border-radius: 35px;
+    text-decoration: none;
+    clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%);
+    transition: ease-out var(--transition);
+}
+.data-body:hover{
+    border: 1px solid var(--light-pink);
+    transition: ease-in var(--transition);
+}
+
+.data-body:hover .name-icon{
+    color: var(--light-pink);
+    transition: ease-in var(--transition);
+}
+
+.data-body:hover .data-content{
+    top: calc(-100% - 1.2rem);
+    transition: ease-in var(--transition);
+}
+
+.data-body:hover path{
+    fill: var(--light-pink);
+}
+
+.data-content{
+    position: relative;
+    top: 0%;
+    transition: ease-out var(--transition);
+}
+
+.name-icon{
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 1.2rem;
+}
+
+.svg-icon{
+    height: 1.2rem;
+    position: relative;
+}
+
+.svg-icon path{
+    fill: #fff;
+}
+
+@media only screen and (max-width: 1000px){
+ 
+    .ball-1{
+        left: -20%;
+    }
+    .ball-2{
+        right: -10%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+ 
+    .ball-1{
+        left: -90%;
+    }
+    .ball-2{
+        right: -50%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+ 
+    .card{
+        width: 100wv;
+    }
+}
