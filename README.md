@@ -2,7 +2,7 @@
 
 <img src="/src/Card Design.jpg" alt="Card Design"/>
 <p align="center">
-  <a href="https://hossamelbesh.github.io/Card/">Preview the Website</a>
+  <a href="https://hossamelbesh.github.io/Card/">Click To Preview</a>
 </p>
 
 ## Project Overview
