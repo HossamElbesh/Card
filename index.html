@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hossam Elbesh">
-    <meta name="image" property="og:image" content="./src/picture/Avatar.jpg">
+    <meta name="description" content="Hossam Elbesh - Contact">
+    <meta name="image" property="og:image" content="../assets/images/hero-banner.jpg">
     <link rel="shortcut icon" href="./src/picture/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/style.css">    
-    <title>Hossam Elbesh</title>
+    <title>Hossam Elbesh | Contact</title>
 </head>
 <body>
+    <!-- Home Button -->
+    <a href="https://hossamelbesh.github.io/" class="home-btn" data-scroll="fade-in">
+        <ion-icon name="home-outline"></ion-icon>
+        <span>Home</span>
+    </a>
+
     <div class="screen">
-        <div class="card">
+        <div class="card" data-scroll="fade-up">
             <div class="card-header">
-                <img src="./src/picture/Avatar.jpg" alt="Hossam Elbesh" class="profile-photo mg-bottom-10">
+                <img src="../assets/images/hero-banner.jpg" alt="Hossam Elbesh" class="profile-photo mg-bottom-10">
                 <span class="person-name mg-bottom-10">Hossam Elbesh</span>
                 <span class="person-desc">Software Developer</span>
             </div>
@@ -22,7 +31,7 @@
             <div class="card-body">
 
                 <!--- #Instagram -->
-                <a href="https://www.instagram.com/Hossam_Elbesh/" target="_blank" class="data-body">
+                <a href="https://www.instagram.com/Hossam_Elbesh/" target="_blank" rel="noopener" class="data-body" style="--delay: 0;">
                     <div class="data-content">
                         <p class="name-icon">Instagram</p>
                         <svg class="svg-icon" viewBox="0 0 672 672" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,7 +41,7 @@
                 </a>
 
                 <!--- #Facebook -->
-                <a href="https://www.facebook.com/HossamMoElbesh/" target="_blank" class="data-body">
+                <a href="https://www.facebook.com/HossamMoElbesh/" target="_blank" rel="noopener" class="data-body" style="--delay: 1;">
                     <div class="data-content">
                         <p class="name-icon">Facebook</p>
                         <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16">
@@ -42,7 +51,7 @@
                 </a>
 
                 <!--- #Twitter -->
-                <a href="https://twitter.com/Hossam_Elbesh" target="_blank" class="data-body no-margin">
+                <a href="https://twitter.com/Hossam_Elbesh" target="_blank" rel="noopener" class="data-body no-margin" style="--delay: 2;">
                     <div class="data-content">
                         <p class="name-icon">Twitter</p>
                         <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none"  viewBox="0 0 16 16">
@@ -53,7 +62,7 @@
                 <br />
 
                 <!--- #Snapchat -->
-                <a href="https://www.snapchat.com/add/hossam-elbesh" target="_blank" class="data-body no-margin">
+                <a href="https://www.snapchat.com/add/hossam-elbesh" target="_blank" rel="noopener" class="data-body no-margin" style="--delay: 3;">
                     <div class="data-content">
                         <p class="name-icon">Snapchat</p>
                         <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16">
@@ -64,7 +73,7 @@
                 <br />
 
                 <!--- #Whatsapp -->
-                <a href="https://wa.me/+201013758838" target="_blank" class="data-body no-margin">
+                <a href="https://wa.me/+201013758838" target="_blank" rel="noopener" class="data-body no-margin" style="--delay: 4;">
                     <div class="data-content">
                         <p class="name-icon">Whatsapp</p>
                         <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16">
@@ -75,7 +84,7 @@
                 <br />
                 
                 <!---LinkedIn-->
-                <a href="https://www.linkedin.com/in/Hossam-Elbesh/" target="_blank" class="data-body">
+                <a href="https://www.linkedin.com/in/Hossam-Elbesh/" target="_blank" rel="noopener" class="data-body" style="--delay: 5;">
                     <div class="data-content">
                         <p class="name-icon">LinkedIn</p>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="svg-icon" viewBox="0 0 16 16">
@@ -85,7 +94,7 @@
                 </a>
                 
                 <!---Website-->
-                <a href="https://hossamelbesh.github.io/" target="_blank" class="data-body">
+                <a href="https://hossamelbesh.github.io/" target="_blank" rel="noopener" class="data-body" style="--delay: 6;">
                     <div class="data-content">
                         <p class="name-icon">Website</p>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="svg-icon" viewBox="0 0 16 16">
@@ -96,14 +105,61 @@
                 </a>
                 
                 <!--Copyright-->
-                <div class="copyright")
+                <div class="copyright">
                     <p> Copyright &copy; <script>document.write(new Date().getFullYear())</script> Hossam Elbesh - All Rights Reserved</p>
                 </div>
                 
             </div>
         </div>
     </div>
+    
+    <!-- Background Elements -->
     <div class="ball-1"></div>
     <div class="ball-2"></div>
+    <div class="grid-background"></div>
+
+    <!-- Ion Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Scroll Animations Script -->
+    <script>
+        // Simple scroll animation handler
+        const initScrollAnimations = function() {
+            const scrollElements = document.querySelectorAll('[data-scroll]');
+            
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observerCallback = function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('scroll-animated');
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            scrollElements.forEach(element => {
+                observer.observe(element);
+            });
+
+            // Make elements visible immediately if already in viewport
+            scrollElements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                const isInViewport = rect.top >= 0 && rect.top <= window.innerHeight;
+                if (isInViewport) {
+                    element.classList.add('scroll-animated');
+                }
+            });
+        };
+
+        // Initialize on page load
+        window.addEventListener('DOMContentLoaded', initScrollAnimations);
+    </script>
 </body>
 </html>
